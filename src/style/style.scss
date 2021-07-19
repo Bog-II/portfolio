@@ -1,0 +1,87 @@
+@use './abstract/abstract'  as *;
+$cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
+
+.dark {
+  --bg-primary: #000;
+  --bg-secondary: #fff;
+  color: #fff;
+  --cursor: url('../ressources/cursors/cursor-lightBlue.png'), auto;
+  --hoover-primary: #a790ff;
+  --hoover-secondary: #cab6ff;
+  --hoover-scrollbar-color: #e7dcff;
+
+  // --cursor: url('../ressources/cursors/cursor-grey.png'), auto;
+  // --cursor-button: url('../ressources/cursors/cursor-lightBlue.png'), auto;
+  // --cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
+}
+
+.light {
+  --bg-primary: #fff;
+  --bg-secondary: #000;
+  color: #000;
+  --cursor: url('../ressources/cursors/cursor-darkBlue.png'), auto;
+  --hoover-primary: #0320ff;
+  --hoover-secondary: #0015ef;
+  --hoover-scrollbar-color: #0016aa;
+
+  // --cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  transition: all 300ms;
+  height: 2000px; // change to 100%
+  width: 100%;
+  cursor: var(--cursor);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  cursor: $cursor-button;
+}
+
+button:hover,
+a:hover {
+  color: var(--hoover-primary);
+  transition: all 150ms ease-in-out;
+}
+
+::selection {
+  background-color: #a7fff1;
+  color: #000;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hoover-scrollbar-color);
+}
+
+.social-link-path {
+  fill: var(--bg-secondary);
+  transition: all 150ms ease-in-out;
+}
+
+.social-link:hover path {
+  fill: var(--hoover-primary);
+  transition: all 150ms ease-in-out;
+}
