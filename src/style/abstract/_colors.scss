@@ -1,20 +1,14 @@
 :root {
-  --gray0: #f8f8f8;
-  --gray1: #dbe1e8;
-  --gray2: #b2becd;
-  --gray3: #6c7983;
-  --gray4: #454e56;
-  --gray5: #2a2e35;
-  --gray6: #12181b;
-  --blue: #0084a5;
-  --purple: #a82dd1;
-  --yellow: #fff565;
-
-  --bg-dark: #000;
-
-  --border-color: #fff;
-  --font-color: #fff;
+  --bg-primary: #000;
+  --bg-secondary: #fff;
+  color: #fff;
+  --hoover-primary: #a790ff;
+  --hoover-secondary: #cab6ff;
+  --hoover-scrollbar-color: #e7dcff;
 }
 
-$font-color: var(--font-color);
-$bg-color: var(--bg-dark);
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$hoover-primary: var(--hoover-primary);
+$hoover-secondary: var(--hoover-secondary);
+

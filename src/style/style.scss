@@ -1,4 +1,6 @@
 @use './abstract/abstract'  as *;
+@use './components/components' as *;
+
 $cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
 
 .dark {
@@ -40,6 +42,8 @@ body {
   height: 2000px; // change to 100%
   width: 100%;
   cursor: var(--cursor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -47,7 +51,8 @@ a {
 }
 
 button,
-a {
+a,
+.toggle {
   cursor: $cursor-button;
 }
 
@@ -76,7 +81,9 @@ a:hover {
   background: var(--hoover-scrollbar-color);
 }
 
-.social-link-path {
+// svg-path
+.social-link-path,
+.signature-path {
   fill: var(--bg-secondary);
   transition: all 150ms ease-in-out;
 }
