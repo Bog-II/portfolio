@@ -81,6 +81,10 @@ a:hover {
   background: var(--hoover-scrollbar-color);
 }
 
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
 // svg-path
 .social-link-path,
 .signature-path {
