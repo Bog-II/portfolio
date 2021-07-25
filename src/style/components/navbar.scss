@@ -1,0 +1,80 @@
+@use '../abstract/abstract' as *;
+
+#navbar {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+  font-size: 22px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5%;
+  font-variation-settings: 'wght' 450;
+
+  backdrop-filter: blur(12px) saturate(130%);
+  -webkit-backdrop-filter: blur(12px) saturate(130%);
+
+  a {
+    transform: skew(0deg, 0deg);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  a:hover {
+    transform: skew(0deg, 3deg);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.dark {
+  #navbar {
+    border: 1px solid rgba(255, 255, 255, 0.525);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 16px;
+
+    a:hover {
+      color: #76ff03;
+    }
+  }
+}
+
+.light {
+  #navbar {
+    border: 1px solid rgba(17, 25, 40, 0.525);
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: $medium - 1px) {
+  #navbar {
+    width: 50%;
+    left: 70%;
+    top: 80%;
+  }
+}
+
+@media (min-width: $medium) {
+  #navbar {
+    width: 40%;
+  }
+}
+
+@media (min-width: $large) {
+  #navbar {
+    width: 33%;
+  }
+}
+
+@media (min-width: $xlarge) {
+  #navbar {
+    width: 28%;
+  }
+}
+
+@media (min-width: $xxlarge) {
+  #navbar {
+    width: 23%;
+  }
+}

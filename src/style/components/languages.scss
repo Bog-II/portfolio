@@ -4,5 +4,11 @@
   a {
     color: var(--bg-secondary);
     text-decoration: underline;
-  } 
+    font-variation-settings: 'wght' 555;
+    font-size: 16px;
+  }
+}
+
+#language-hr {
+  padding: 0 3px 0 3px;
 }

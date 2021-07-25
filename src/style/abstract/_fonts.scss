@@ -1,0 +1,147 @@
+@use './media-width' as *;
+
+// roobert
+@font-face {
+  font-family: roobert;
+  src: url('../ressources/fonts/roobert/Roobert-Regular.woff2');
+}
+
+@font-face {
+  font-family: roobert-italic;
+  src: url('../ressources/fonts/roobert/RoobertItalic-Regular.woff2');
+}
+
+// IBMPlexSans
+@font-face {
+  font-family: IBMPlexSans;
+  src: url('../ressources/fonts/IBMPlexSans/IBMPlexSans.ttf');
+}
+
+// Serif1
+@font-face {
+  font-family: serif1-bold;
+  src: url('../ressources/fonts/serif1/Serif1-Bold.ttf');
+}
+
+@font-face {
+  font-family: serif1-semibold;
+  src: url('../ressources/fonts/serif1/Serif1-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: serif1-medium;
+  src: url('../ressources/fonts/serif1/Serif1-Medium.ttf');
+}
+
+@font-face {
+  font-family: serif1-regular;
+  src: url('../ressources/fonts/serif1/Serif1-Regular.ttf');
+}
+
+// Serif2
+@font-face {
+  font-family: serif2-black;
+  src: url('../ressources/fonts/serif2/Serif2-Black.ttf');
+}
+
+@font-face {
+  font-family: serif2-ultrabold;
+  src: url('../ressources/fonts/serif2/Serif2-Ultrabold.ttf');
+}
+
+@font-face {
+  font-family: serif2-bold;
+  src: url('../ressources/fonts/serif2/Serif2-Bold.ttf');
+}
+
+@font-face {
+  font-family: serif2-semibold;
+  src: url('../ressources/fonts/serif2/Serif2-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: serif2-medium;
+  src: url('../ressources/fonts/serif2/Serif2-Medium.ttf');
+}
+
+@font-face {
+  font-family: serif2-regular;
+  src: url('../ressources/fonts/serif2/Serif2-Regular.ttf');
+}
+
+@font-face {
+  font-family: serif2-ultralight;
+  src: url('../ressources/fonts/serif2/Serif2-Ultralight.ttf');
+}
+
+html,
+body {
+  font-weight: normal;
+  font-family: roobert;
+  font-variation-settings: 'wght' 370;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: serif1-semibold;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: serif1-medium;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: serif1-regular;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $medium) {
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: $large) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: $xlarge) {
+  h1 {
+    font-size: 88px;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+}

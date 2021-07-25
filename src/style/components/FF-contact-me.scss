@@ -1,0 +1,29 @@
+#FF-contact-me {
+  font-family: IBMPlexSans;
+  font-weight: normal;
+  font-size: 48px;
+
+  animation: breathe 3000ms infinite alternate ease-in-out;
+}
+
+@keyframes breathe {
+  20% {
+    font-variation-settings: 'wght' 200;
+    letter-spacing: 0;
+  }
+
+  50% {
+    font-variation-settings: 'wght' 600;
+    letter-spacing: -0.06em;
+  }
+
+  80% {
+    font-variation-settings: 'wght' 200;
+    letter-spacing: 0;
+  }
+
+  100% {
+    font-variation-settings: 'wght' 450;
+    letter-spacing: 0.06em;
+  }
+}

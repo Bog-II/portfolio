@@ -48,9 +48,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  padding: 0 8% 0 8%;
+}
+
 a {
   text-decoration: none;
+  color: var(--bg-secondary);
 }
+
+
 
 button,
 a,

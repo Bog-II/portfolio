@@ -1,0 +1,10 @@
+#contact-links span {
+  display: inline-block;
+  transform: skew(0deg, 0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+#contact-links span:hover {
+  transform: skew(0deg, 6deg);
+  transition: all 0.2s ease-in-out;
+}
