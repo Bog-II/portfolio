@@ -125,8 +125,8 @@
       </div>
 
       <div id="navbar">
+        <a href="#about-me-section" id="nav-about-me">About Me</a>
         <a href="#projects">My projects</a>
-        <a href="#about-me" id="nav-about-me">About Me</a>
         <a href="#contact">Contact</a>
       </div>
 
@@ -262,6 +262,21 @@
           rem exercitationem optio.
         </h1>
       </div>
+
+      <section id="about-me-section">
+        <div class="section-container">
+          <h2 id="about-me">About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            animi non. Placeat impedit accusamus sunt doloremque. Laboriosam
+            officia, vitae vel eum natus obcaecati nihil in molestias, maiores
+            voluptas exercitationem iure repellat iste? Ut magni dignissimos
+            ullam quo quis sed fugiat?
+          </p>
+          <button>Resume (109 kb)</button>
+        </div>
+      </section>
+
       <section>
         <h2 id="projects">My projects</h2>
         <div class="project">
@@ -282,7 +297,6 @@
 
           <div class="container-project-technologies">
             <ul class="project-technologies">
-
               <li><span>Python</span></li>
               <li><span>Pytesseract</span></li>
               <li><span>NodeJS</span></li>
@@ -290,55 +304,109 @@
           </div>
         </div>
 
-        <div>
-          <h3>Scrapping</h3>
-          <figure>
+        <div class="project">
+          <figure class="project-figure">
             <img
-              src="./src/ressources/project-illustration/digit-recognition-1175x880.jpg"
-              alt="digit recognition"
+              src="./src/ressources/project-illustration/webscraping-1175x880.jpg"
+              alt="content webscraping"
+              class="project-image"
             />
-            <figcaption>
-              Creation of a tool that recognize digits in images
+            <h3 class="project-title">Articles Traduction and Scraping</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Webscraping of articles (e.g. medium) and traduction of them in
+                languages available by googletrans api</span
+              >
+              <span class="github-project">
+                <a href="/">Github ↗</a>
+              </span>
             </figcaption>
           </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Python</span></li>
+              <li><span>BeautifulSoup</span></li>
+              <li><span>googletrans</span></li>
+            </ul>
+          </div>
         </div>
 
-        <h3>Digit recognition</h3>
-        <h3>Memory</h3>
-        <h3>Snake</h3>
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./src/ressources/project-illustration/snake-1175x880.jpg"
+              alt="snake game"
+              class="project-image"
+            />
+            <h3 class="project-title">Snake Game</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Snake game allowing 4 skins and multiple features such as
+                boosts and penalties</span
+              >
+              <span class="github-project">
+                <a href="/">Github ↗</a>
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Java</span></li>
+              <li><span>JavaFX</span></li>
+              <li><span>CSS</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./src/ressources/project-illustration/memory-1175x880.jpg"
+              alt="memory game"
+              class="project-image"
+            />
+            <h3 class="project-title">Memory Game</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Memory game of 263 flags from different countries and
+                cities</span
+              >
+              <span class="github-project">
+                <a href="/">Github ↗</a>
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Java</span></li>
+              <li><span>Java Swing</span></li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h2 id="about-me">About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          animi non. Placeat impedit accusamus sunt doloremque. Laboriosam
-          officia, vitae vel eum natus obcaecati nihil in molestias, maiores
-          voluptas exercitationem iure repellat iste? Ut magni dignissimos ullam
-          quo quis sed fugiat?
-        </p>
-        <button>Resume (109 kb)</button>
-      </section>
-
-      <section>
-        <h2 id="contact">Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          animi non. Placeat impedit accusamus sunt doloremque. Laboriosam
-          officia, vitae vel eum natus obcaecati nihil in molestias, maiores
-          voluptas exercitationem iure repellat iste? Ut magni dignissimos ullam
-          quo quis sed fugiat?
-        </p>
-        <div id="contact-links">
-          <span>
-            <a href="mailto:sachart.bogdan@gmail.com" target="_blank"
-              >Email ↗</a
-            >
-          </span>
-          <span><a href="" target="_blank">Github ↗</a></span>
-          <span><a href="" target="_blank">LinkedIn ↗</a> </span>
+        <div class="section-container">
+          <h2 id="contact">Contact</h2>
+          <p>
+            Presently, I am looking for a Software Engineer job. However, if you
+            have another type of request, don't hesitate to contact me using the
+            links below.
+          </p>
+          <div id="contact-links">
+            <span>
+              <a href="mailto:sachart.bogdan@gmail.com" target="_blank"
+                >Email ↗</a
+              >
+            </span>
+            <span><a href="" target="_blank">Github ↗</a></span>
+            <span><a href="" target="_blank">LinkedIn ↗</a> </span>
+          </div>
+          <span id="FF-contact-me">Feel free to get in touch with me</span>
         </div>
-        <span id="FF-contact-me">Feel free to get in touch with me</span>
       </section>
       <!-- <img src="./src/ressources/about-me/chess.png" alt="chess pawn" />
       <img

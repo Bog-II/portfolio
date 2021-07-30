@@ -1,9 +1,14 @@
 #FF-contact-me {
+  max-width: 80vw;
+  // width: 100%;
+  text-align: center;
   font-family: IBMPlexSans;
   font-weight: normal;
   font-size: 48px;
 
   animation: breathe 3000ms infinite alternate ease-in-out;
+
+  padding: 2% 0;
 }
 
 @keyframes breathe {

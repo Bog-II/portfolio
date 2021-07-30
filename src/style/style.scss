@@ -10,7 +10,7 @@ $cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
   --cursor: url('../ressources/cursors/cursor-lightBlue.png'), auto;
   --hoover-primary: #a790ff;
   --hoover-secondary: #cab6ff;
-  --hoover-scrollbar-color: #e7dcff;
+  --secondary-color: #e7dcff;
 
   // --cursor: url('../ressources/cursors/cursor-grey.png'), auto;
   // --cursor-button: url('../ressources/cursors/cursor-lightBlue.png'), auto;
@@ -24,7 +24,7 @@ $cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
   --cursor: url('../ressources/cursors/cursor-darkBlue.png'), auto;
   --hoover-primary: #0320ff;
   --hoover-secondary: #0015ef;
-  --hoover-scrollbar-color: #001bcc;
+  --secondary-color: #001bcc;
 
   // --cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
 }
@@ -44,8 +44,8 @@ html {
 :target:before {
   content: '';
   display: block;
-  height: 160px;
-  margin: -160px 0 0;
+  height: 150px;
+  margin: -150px 0 0;
 }
 
 html,
@@ -70,7 +70,8 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--bg-secondary);
+  // color: var(--bg-secondary);
+  color: var(--secondary-color);
 }
 
 button,
@@ -99,7 +100,7 @@ a:hover,
 
 ::-webkit-scrollbar-thumb {
   // background: var(--bg-secondary);
-  background: var(--hoover-scrollbar-color);
+  background: var(--secondary-color);
   border-radius: 8px;
 }
 
@@ -123,3 +124,4 @@ a:hover,
   fill: var(--hoover-primary);
   transition: all 150ms ease-in-out;
 }
+
