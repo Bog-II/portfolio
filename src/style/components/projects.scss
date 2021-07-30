@@ -1,0 +1,71 @@
+.project-title {
+  margin: 2% 0 0 0;
+}
+
+.project {
+  margin: 2% 0 8% 0;
+}
+
+.project,
+.project-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-height: min(700px, 100vw);
+  // width: auto;
+  max-width: 100%;
+  border-radius: 2%;
+}
+
+.project-image-figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  span {
+    padding: 2% 1% 1.5% 1%;
+  }
+}
+
+.github-project {
+  text-decoration: underline;
+  text-align: center;
+  a {
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    font-variation-settings: 'wght' 500;
+  }
+
+  a:hover {
+    transform: skew(0deg, 6deg);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.container-project-technologies {
+  width: 100%;
+}
+
+.project-technologies {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  list-style-type: none;
+  column-gap: max(8px, 2%);
+  row-gap: max(8px, 2%);
+  padding: max(2%, 8px) 0%;
+
+  flex-wrap: wrap;
+
+  li {
+    font-size: 16px;
+    padding: max(0.6%, 6px);
+    border-radius: 10px;
+    border: 1px solid var(--bg-secondary);
+    font-variation-settings: 'wght' 420;
+  }
+}

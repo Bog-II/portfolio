@@ -253,7 +253,7 @@
         </div>
       </div>
     </header>
-    
+
     <main>
       <div>
         <h1>
@@ -262,14 +262,53 @@
           rem exercitationem optio.
         </h1>
       </div>
-      <div>
+      <section>
         <h2 id="projects">My projects</h2>
-        <h3>Scrapping</h3>
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./src/ressources/project-illustration/digit-recognition-1175x880.jpg"
+              alt="digit recognition"
+              class="project-image"
+            />
+            <h3 class="project-title">Digit recognition</h3>
+            <figcaption class="project-image-figcaption">
+              <span>Creation of a tool that recognize digits in images</span>
+              <span class="github-project">
+                <a href="/">Github ↗</a>
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+
+              <li><span>Python</span></li>
+              <li><span>Pytesseract</span></li>
+              <li><span>NodeJS</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3>Scrapping</h3>
+          <figure>
+            <img
+              src="./src/ressources/project-illustration/digit-recognition-1175x880.jpg"
+              alt="digit recognition"
+            />
+            <figcaption>
+              Creation of a tool that recognize digits in images
+            </figcaption>
+          </figure>
+        </div>
+
         <h3>Digit recognition</h3>
         <h3>Memory</h3>
         <h3>Snake</h3>
-      </div>
-      <div>
+      </section>
+
+      <section>
         <h2 id="about-me">About me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
@@ -279,8 +318,9 @@
           quo quis sed fugiat?
         </p>
         <button>Resume (109 kb)</button>
-      </div>
-      <div>
+      </section>
+
+      <section>
         <h2 id="contact">Contact</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
@@ -299,7 +339,7 @@
           <span><a href="" target="_blank">LinkedIn ↗</a> </span>
         </div>
         <span id="FF-contact-me">Feel free to get in touch with me</span>
-      </div>
+      </section>
       <!-- <img src="./src/ressources/about-me/chess.png" alt="chess pawn" />
       <img
         src="./src/ressources/about-me/design.png"
@@ -312,6 +352,7 @@
     </main>
 
     <footer>
+      <!-- Dynamically updated -->
       <div id="footer"></div>
     </footer>
     <script type="module" src="./src/ts/main.ts" defer></script>

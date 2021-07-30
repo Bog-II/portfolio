@@ -83,65 +83,83 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 54px;
   font-family: serif1-semibold;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
   font-family: serif1-medium;
   font-weight: normal;
   text-transform: uppercase;
+
+  text-align: center;
+  padding: 6% 0 2% 0;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 36px;
   font-family: serif1-regular;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 
-@media (min-width: $medium) {
+@media (min-width: $small) {
   h1 {
-    font-size: 56px;
+    font-size: 82px;
   }
 
   h2 {
+    font-size: 70px;
+  }
+
+  h3 {
     font-size: 48px;
   }
-
-  h3 {
-    font-size: 36px;
-  }
 }
 
-@media (min-width: $large) {
-  h1 {
-    font-size: 64px;
-  }
-
-  h2 {
-    font-size: 54px;
-  }
-
-  h3 {
-    font-size: 42px;
-  }
-}
-
-@media (min-width: $xlarge) {
+@media (min-width: $medium) {
   h1 {
     font-size: 88px;
   }
 
   h2 {
-    font-size: 64px;
+    font-size: 74px;
   }
 
   h3 {
-    font-size: 48px;
+    font-size: 52px;
+  }
+}
+
+@media (min-width: $large) {
+  h1 {
+    font-size: 92px;
+  }
+
+  h2 {
+    font-size: 74px;
+  }
+
+  h3 {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: $xlarge) {
+  h1 {
+    font-size: 112px;
+  }
+
+  h2 {
+    font-size: 92px;
+  }
+
+  h3 {
+    font-size: 64px;
   }
 }
