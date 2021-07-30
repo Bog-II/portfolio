@@ -125,9 +125,68 @@
       </div>
 
       <div id="navbar">
-        <a href="#home">My projects</a>
-        <a href="#news" id="nav-about-me">About Me</a>
+        <a href="#projects">My projects</a>
+        <a href="#about-me" id="nav-about-me">About Me</a>
         <a href="#contact">Contact</a>
+      </div>
+
+      <div id="button-navbar">
+        <!-- Hamburger SVG -->
+        <svg
+          width="28"
+          height="15"
+          viewBox="0 0 27 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="hamburger-svg"
+        >
+          <rect
+            width="27"
+            height="3"
+            rx="1.5"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+          <rect
+            y="9"
+            width="27"
+            height="3"
+            rx="1.5"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+        </svg>
+
+        <!-- Cross SVG -->
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 23 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="cross-svg"
+        >
+          <rect
+            x="1"
+            y="20"
+            width="27"
+            height="3"
+            rx="1.5"
+            transform="rotate(-45 1 20)"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+          <rect
+            x="2.99951"
+            y="1"
+            width="27"
+            height="3"
+            rx="1.5"
+            transform="rotate(45 2.99951 1)"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+        </svg>
       </div>
 
       <div id="right-menu-item">
@@ -194,6 +253,7 @@
         </div>
       </div>
     </header>
+    
     <main>
       <div>
         <h1>
@@ -203,15 +263,14 @@
         </h1>
       </div>
       <div>
-        <h2>My projects</h2>
-        <h3>Memory</h3>
+        <h2 id="projects">My projects</h2>
         <h3>Scrapping</h3>
         <h3>Digit recognition</h3>
         <h3>Memory</h3>
         <h3>Snake</h3>
       </div>
       <div>
-        <h2>About me</h2>
+        <h2 id="about-me">About me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
           animi non. Placeat impedit accusamus sunt doloremque. Laboriosam
@@ -219,10 +278,10 @@
           voluptas exercitationem iure repellat iste? Ut magni dignissimos ullam
           quo quis sed fugiat?
         </p>
-        <button>Download my resume</button>
+        <button>Resume (109 kb)</button>
       </div>
       <div>
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
           animi non. Placeat impedit accusamus sunt doloremque. Laboriosam
@@ -239,7 +298,7 @@
           <span><a href="" target="_blank">Github ↗</a></span>
           <span><a href="" target="_blank">LinkedIn ↗</a> </span>
         </div>
-        <span id="FF-contact-me">Feel free to contact me</span>
+        <span id="FF-contact-me">Feel free to get in touch with me</span>
       </div>
       <!-- <img src="./src/ressources/about-me/chess.png" alt="chess pawn" />
       <img
@@ -255,8 +314,6 @@
     <footer>
       <div id="footer"></div>
     </footer>
-    <!-- <div id="app"></div>
-    <button>test cursor look</button> -->
     <script type="module" src="./src/ts/main.ts" defer></script>
   </body>
 </html>

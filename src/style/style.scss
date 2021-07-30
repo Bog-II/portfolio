@@ -24,7 +24,7 @@ $cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
   --cursor: url('../ressources/cursors/cursor-darkBlue.png'), auto;
   --hoover-primary: #0320ff;
   --hoover-secondary: #0015ef;
-  --hoover-scrollbar-color: #0016aa;
+  --hoover-scrollbar-color: #001bcc;
 
   // --cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
 }
@@ -37,15 +37,31 @@ $cursor-button: url('../ressources/cursors/cursor-red.png'), auto;
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: '';
+  display: block;
+  height: 160px;
+  margin: -160px 0 0;
+}
+
 html,
 body {
   background-color: var(--bg-primary);
   transition: all 300ms;
-  height: 2000px; // change to 100%
-  width: auto;
   cursor: var(--cursor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 100%;
 }
 
 body {
@@ -56,8 +72,6 @@ a {
   text-decoration: none;
   color: var(--bg-secondary);
 }
-
-
 
 button,
 a,
@@ -73,7 +87,7 @@ a:hover,
 }
 
 ::selection {
-  background-color: #a7fff1;
+  background-color: #75ffe8;
   color: #000;
   text-shadow: none;
 }
@@ -84,11 +98,14 @@ a:hover,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-secondary);
+  // background: var(--bg-secondary);
+  background: var(--hoover-scrollbar-color);
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--hoover-scrollbar-color);
+  // background: var(--hoover-scrollbar-color);
+  background: var(--hoover-secondary);
 }
 
 ::-webkit-scrollbar-track {

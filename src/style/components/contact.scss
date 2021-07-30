@@ -1,10 +1,23 @@
+#contact-links {
+  margin: 1% 0;
+}
+
 #contact-links span {
   display: inline-block;
   transform: skew(0deg, 0deg);
   transition: transform 0.2s ease-in-out;
+  font-size: 24px;
 }
 
 #contact-links span:hover {
-  transform: skew(0deg, 6deg);
+  transform: skew(0deg, 5deg);
   transition: all 0.2s ease-in-out;
+}
+
+#contact-links > span:first-child {
+  padding-right: 1%;
+}
+
+#contact-links > span:last-child {
+  padding-left: 1%;
 }
