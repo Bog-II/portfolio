@@ -82,10 +82,15 @@ body {
   font-size: 18px;
 }
 
+h1, h2, h3, p, span, button {
+  z-index: 1;
+}
+
 h1 {
   font-size: 54px;
   font-family: serif1-semibold;
   font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
 }
 

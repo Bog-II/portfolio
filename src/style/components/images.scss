@@ -1,3 +1,5 @@
+@use '../abstract/media-width' as *;
+
 .dark {
   --shadow-i: drop-shadow(0px 8px 24px rgba(255, 255, 255, 0.4));
   --shadow-ni: drop-shadow(0px 8px 24px rgba(255, 255, 255, 0.3));
@@ -38,6 +40,7 @@
 #loupe,
 #plane {
   position: absolute;
+  z-index: 0;
 }
 
 #loupe,
@@ -52,8 +55,8 @@
 
 #loupe {
   height: 120px;
-  top: 90%;
-  right: 70%;
+  top: 100%;
+  right: 80%;
   animation: loupe-keyframe 6s infinite alternate ease-in-out;
   transition: 0.6s ease-in-out;
   filter: var(--shadow-ni);
@@ -67,8 +70,8 @@
 
 #plane {
   height: 160px;
-  top: 90%;
-  right: 20%;
+  top: 88%;
+  right: 12%;
   animation: plane-keyframe 4s infinite alternate ease-in-out;
   transition: 0.7s ease-in-out;
   filter: var(--shadow-i);
@@ -79,4 +82,28 @@
   transition: 0.5s ease-in-out;
   filter: drop-shadow(0px 8px 24px rgba(255, 255, 255, 0.2));
   filter: var(--shadow-ni);
+}
+
+@media (max-width: $medium) {
+  #plane {
+    height: 100px;
+    top: 82%;
+  }
+  #loupe {
+    height: 80px;
+    top: 102%;
+    right: 75%;
+  }
+  #loupe:hover {
+    height: 110px;
+  }
+}
+
+@media (min-width: $medium) {
+  #plane {
+    height: 140px;
+  }
+  #loupe {
+    height: 120px;
+  }
 }

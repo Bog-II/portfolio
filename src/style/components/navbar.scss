@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 6%;
+  height: max(6%, 50px);;
   font-variation-settings: 'wght' 450;
 
   opacity: 1;
@@ -152,6 +152,7 @@
 @media (min-width: $medium) {
   #navbar {
     width: 40%;
+    font-size: 22px;
   }
 
   #button-navbar {
@@ -161,18 +162,21 @@
 
 @media (min-width: $large) {
   #navbar {
-    width: 36%;
+    width: 37%;
+    font-size: 24px;
   }
 }
 
 @media (min-width: $xlarge) {
   #navbar {
-    width: 28%;
+    width: 32%;
+    font-size: 24px;
   }
 }
 
 @media (min-width: $xxlarge) {
   #navbar {
-    width: 23%;
+    width: 30%;
+    font-size: 30px;
   }
 }

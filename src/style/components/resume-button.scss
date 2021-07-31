@@ -1,0 +1,25 @@
+#resume-button {
+  font-size: 26px;
+  font-variation-settings: 'wght' 500;
+  background-color: var(--bg-primary);
+  color: var(--bg-secondary);
+
+  border: 1px solid var(--bg-secondary);
+  border-radius: 16px;
+
+  padding: max(20px, 2%) max(15px, 2%);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#resume-button:hover {
+  font-size: 26px;
+  font-variation-settings: 'wght' 500;
+  background-color: var(--secondary-color);
+  color: var(--bg-primary);
+
+  border: 1px solid var(--secondary-color);
+
+  padding: max(22px, 2.2%) max(20px, 2.2%);
+  transition: all 0.2s ease-in-out;
+}
