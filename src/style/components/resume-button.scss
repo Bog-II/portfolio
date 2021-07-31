@@ -20,6 +20,9 @@
 
   border: 1px solid var(--secondary-color);
 
-  padding: max(22px, 2.2%) max(20px, 2.2%);
+  padding: max(22px, 2.5%) max(20px, 2.5%);
   transition: all 0.2s ease-in-out;
+  font-size: 29px;
+
+  transform: skew(0deg, 3deg);
 }
