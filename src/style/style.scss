@@ -41,13 +41,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:target:before {
-  content: '';
-  display: block;
-  height: 150px;
-  margin: -150px 0 0;
-}
-
 html,
 body {
   background-color: var(--bg-primary);
@@ -128,3 +121,41 @@ a:hover,
   transition: all 150ms ease-in-out;
 }
 
+
+main {
+  margin: max(6%,80px) 0;
+}
+
+:target:before {
+  content: '';
+  display: block;
+  height: 40px;
+  margin: -40px 0 0;
+}
+
+@media (min-width: $small) {
+  :target:before {
+    content: '';
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
+  }
+}
+
+@media (min-width: $medium) {
+  :target:before {
+    content: '';
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+  }
+}
+
+@media (min-width: $large) {
+  :target:before {
+    content: '';
+    display: block;
+    height: 150px;
+    margin: -150px 0 0;
+  }
+}
