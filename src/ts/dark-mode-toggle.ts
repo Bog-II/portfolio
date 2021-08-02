@@ -1,13 +1,6 @@
-export {};
-declare global {
-  interface Window {
-    variables: any;
-  }
-}
-
 const displayConsole = (color: string, backgroundColor: string) => {
   console.clear();
-  const message = window?.variables?.messageConsole || 'Nice Try!';
+  const message = (window as any).variables.messageConsole || 'Nice Try!';
   console.log(
     `%c ${message}`,
     `
