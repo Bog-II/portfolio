@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: max(6%, 50px);;
+  height: max(6%, 50px);
   font-variation-settings: 'wght' 450;
 
   opacity: 1;
@@ -31,8 +31,8 @@
 
 #navbar,
 #button-navbar {
-  backdrop-filter: blur(12px) saturate(140%);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
 }
 
 #button-navbar {
@@ -46,8 +46,8 @@
 }
 
 #button-navbar:active {
-  backdrop-filter: blur(18px) saturate(170%);
-  -webkit-backdrop-filter: blur(18px) saturate(170%);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
 }
 
 // SVG button-navbar
@@ -101,6 +101,10 @@
     border: 1px solid rgba(17, 25, 40, 0.525);
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 16px;
+
+    a:hover {
+      color: var(--hoover-secondary);
+    }
   }
 
   .rect-svg-navbar-button {

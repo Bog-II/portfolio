@@ -70,8 +70,7 @@
 
 #plane {
   height: 160px;
-  top: 88%;
-  right: 12%;
+  right: 15%;
   animation: plane-keyframe 4s infinite alternate ease-in-out;
   transition: 0.7s ease-in-out;
   filter: var(--shadow-i);
@@ -87,11 +86,11 @@
 @media (max-width: $medium) {
   #plane {
     height: 100px;
-    top: 82%;
+    // top: 380%;
   }
   #loupe {
     height: 80px;
-    top: 102%;
+    top: 125%;
     right: 75%;
   }
   #loupe:hover {

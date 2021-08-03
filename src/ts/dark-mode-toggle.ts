@@ -1,6 +1,7 @@
+const message = (window as any).variables.messageConsole || 'Nice Try!';
+
 const displayConsole = (color: string, backgroundColor: string) => {
   console.clear();
-  const message = (window as any).variables.messageConsole || 'Nice Try!';
   console.log(
     `%c ${message}`,
     `
@@ -17,7 +18,6 @@ const displayConsole = (color: string, backgroundColor: string) => {
 };
 
 const body = document.body;
-
 const theme = localStorage.getItem('theme');
 const toggle = <HTMLInputElement>document.getElementById('toggle-dark-mode');
 
