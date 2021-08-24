@@ -83,7 +83,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/style.scss" />
-    <title>Benoit Bogdan Sachart - Software Engineer</title>
+    <title>Benoit Bogdan Sachart</title>
   </head>
   <body class="dark">
     <header>
@@ -196,11 +196,11 @@
 
         <div id="languages">
           <span class="language">
-            <a href="/" id="en" class="checked-language">EN</a>
+            <a href="./" id="en" class="checked-language">EN</a>
           </span>
           <span id="language-hr">|</span>
           <span class="language">
-            <a href="/fr" id="fr">FR</a>
+            <a href="./fr.html" id="fr">FR</a>
           </span>
         </div>
         <div id="social-links">
@@ -266,17 +266,14 @@
       <section id="about-me-section">
         <div class="section-container">
           <h2 id="about-me">About me</h2>
-          <p>
-            <span>
-              I am currently pursuing a degree in computer science in France.
-            </span>
-            <br />
-            <span>
-              My different interests are: Machine Learning, Philosophy,
-              Mathematics, Economy, Finance, Design, Chess and obviously
-              Computer Science.
-            </span>
-          </p>
+          <div class="p-wrap">
+            <p>I am currently pursuing a computer science degree in France.</p>
+            <p>
+              My different interests are:<br />
+              Machine Learning, Philosophy, Mathematics, Economy, Finance,
+              Design, Chess and obviously Computer Science.
+            </p>
+          </div>
           <button id="resume-button">Resume (109 kb)</button>
         </div>
       </section>
@@ -290,11 +287,11 @@
               alt="digit recognition"
               class="project-image"
             />
-            <h3 class="project-title">CHARACTERS EXTRACTION</h3>
+            <h3 class="project-title">Characters Extraction</h3>
             <figcaption class="project-image-figcaption">
               <span
                 >Tool allowing characters recognition and extraction from images
-                in 66 languages through an UI in the browser.</span
+                in 66 languages through an UI in the browser</span
               >
               <span class="github-project">
                 <a
@@ -322,7 +319,7 @@
               alt="content webscraping"
               class="project-image"
             />
-            <h3 class="project-title">Flappy bird & AI</h3>
+            <h3 class="project-title">Flappy Bird & AI</h3>
             <figcaption class="project-image-figcaption">
               <span
                 >Flappy bird game and neural network trained concurrently per
@@ -357,7 +354,7 @@
             <figcaption class="project-image-figcaption">
               <span
                 >Webscraping of articles (e.g. medium) and translation of them
-                in all languages available by the pyGoogleTrans api</span
+                in all languages available by the pyGoogleTranslate api</span
               >
             </figcaption>
           </figure>
@@ -381,8 +378,9 @@
             <h3 class="project-title">Snake Game</h3>
             <figcaption class="project-image-figcaption">
               <span
-                >Snake game allowing 4 skins and multiple features such as
-                boosts and penalties</span
+                >Snake game integrating multiple features such as boosts,
+                penalties, tracking scores, snake skins and the modification of
+                the map size</span
               >
               <span class="github-project">
                 <a
@@ -413,8 +411,9 @@
             <h3 class="project-title">Memory Game</h3>
             <figcaption class="project-image-figcaption">
               <span
-                >Memory game of 263 flags from different countries and
-                cities</span
+                >Memory game composed of 263 international flags from different
+                countries and cities incorporating 3 difficulties and score
+                tracking</span
               >
               <span class="github-project">
                 <a
@@ -438,11 +437,14 @@
       <section>
         <div class="section-container">
           <h2 id="contact">Contact</h2>
-          <p>
-            Presently, I am looking for a Software Engineer job. However, if you
-            have another type of request, don't hesitate to contact me using the
-            links below ↓.
-          </p>
+          <div class="p-wrap">
+            <p>Presently, I am looking for a Software Engineer job.</p>
+            <p>
+              However, if you have another type of request, don't hesitate to
+              contact me using the links below ↓.
+            </p>
+          </div>
+
           <div id="contact-links">
             <span>
               <a href="mailto:sachart.bogdan@gmail.com" target="_blank"
@@ -472,13 +474,23 @@
       <div id="footer"></div>
     </footer>
 
-    <script>
-      // window.variables = {
-      //   'messageConsole': 'Nice Try!',
-      // };
+    <script defer>
+      const css =
+        'color: var(--hoover-primary);text-decoration: none; pointer-events: none; display: inline-block;transform: skew(0, 8deg)';
+
+      // en handle
+      const en = document.getElementById('en');
+      en.style.cssText += css;
       window.variables = {
-        messageConsole: 'Bien essayé!',
+        messageConsole: 'Nice Try!',
       };
+
+      // fr handle
+      // const fr = document.getElementById('fr');
+      // fr.style.cssText += css;
+      // window.variables = {
+      //   messageConsole: 'Bien essayé!',
+      // };
     </script>
 
     <script type="module" src="./src/ts/main.ts" defer></script>
