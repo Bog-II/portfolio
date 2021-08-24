@@ -120,9 +120,8 @@ a:hover,
   transition: all 150ms ease-in-out;
 }
 
-
 main {
-  margin: max(6%,80px) 0;
+  margin: max(6%, 80px) 0;
 }
 
 :target:before {
@@ -130,6 +129,16 @@ main {
   display: block;
   height: 40px;
   margin: -40px 0 0;
+}
+
+.p-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.p-wrap > p {
+  max-width: 55ch;
 }
 
 @media (min-width: $small) {
