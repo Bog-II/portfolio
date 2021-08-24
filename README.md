@@ -1,2 +1,2 @@
 ### Personal Portfolio
-[Preview](https://bog-ii.github.io/portfolio)
+[Preview 🔗](https://bog-ii.github.io/portfolio)
