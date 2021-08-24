@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/apple-icon-57x57.517e84fe.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/apple-icon-60x60.b4541cca.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/apple-icon-72x72.3b2455c1.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/apple-icon-76x76.8c656976.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/apple-icon-114x114.519a8927.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/apple-icon-120x120.59eb8001.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/apple-icon-144x144.e2bfa974.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/apple-icon-152x152.59db4884.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-icon-180x180.ff083293.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/android-icon-192x192.2867ea64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5QcTEyQ0tO0MygAACOtJREFUWMOll1uMZNdVhr+1zz51v3R1zVR3T8/YY5v4MsFDRiYCYcdIMcgCRbLMRQrhDcQDL0CkKIDyCkHIQvASpPCAwoOFLHGRBuQYB0UK40jE1xl7nPgyk+6evkxfqququ+pUndvei4fq6QtiGEv537b22fv/1/r3Wnsf4SdElLyKFurG31iZk162QFhcFgY9vfR71EXuuf7eX/wvDNauMf74IvVHL9fk1v6jkicXTUMe9+KfFlhE5R0qwYtkpVeKs1F3Z/0J5i9d+skERN//DkQ21IXueTMbXZKB/7R6ngJ/UQeuLTVEBLCAB92XzG/I93XCP0hQfLn6d/+4vfPCn9L5uac/mYAkSRAR472fReRCPuifz69e/pxtxr9sZoqLUjFWxKMZ4AQqio6BGLTv4JagY4+IybD2LYx5SW34b6vPPXezc+UK7V/5wkkBWZZhrSVJkrqqPqqqPwM8LiK/ADys3td0tGE0+wDyDYxPkTxEAyD2MBS0q7AriMpUFKCAiCDGqAbBj1yevzjeXH+xUK2stP7gq1MBWZY9kOf5E6r6GeBJ4HFg9ig7ggggBp+nJPsfE797hXCpT4EiYaUJzqJepz6IgBFEBPVKPhqSbG2S7GwzWb1FvLv7l4Xh4E8W/uVlGo9ewG5t3v72zEzrwcDaUFWPEiOAelw2IRn1SIY9umsfsXnzOuqVTrVEYfkGTenQqDQJZ1pgDT6OSbZ3SHa2mKyvEy0vkex2cUmCeo+t1h5sf+WP7fY3v5ED2DffeP2Rubl5Fs+epdWaJQgMeRKRxSOyyZB4uE02GePSCcmwS54rg5GysbsLYZ12tUGnP2Bu6SbBYI/xyjKTzdtk4wife1QVPShHQVDhod1Xv93E+10Au9sfZP3BXri6tsb8qVNk2+vU2nU6nTaBKKjFVmbxYYYbC9IqU6wow50+eMdO4ujVamxeeY3TV69hAnOQQYEp4SEU0CxbzDY25tXlUwGIWc+dO783HDIcDNj/z1eJ05S5Jz7D2Z++wOIDD6FO6PcjRpESZ5AnMfWKZbS7x3AcUzt9iqg1SwslvHN0Du08CXWu5ePJQz6K3gewRuS6h/MoeBMQ1mtk165x6/ZtVt76AY898wzlmTbxZIR3bppSQMUQFEswThBbRJstchHCe/QU9VrQJL7gtjYvAxjg+lFRCkG9QRiGlIDKXpd048ckyQQxAaZQJCiUMYUyEhax5SpBWEBsCJ3T5MXSXSM/UqBoHJ+NRo7Rm1exqrotIl5VDQhBpYothNMScjk6SrDFyoGXgiqIKuI9IBQqZUxgMXNz5M0m7GwBwd35UZDg1MN/9ufB2jf+2llr7XKaphOgCoqpNyhUqgTOM8GhmccWS2CC6WIFrx7nPGIt5eYMplAgrFbRuXl0axMJ/r8MgKIP9b/770312rNBEHwoIl1VrQJQq1FstciTlFwcLvTYMMQUSlP9XqcCckeWZ9RbbTQIEBPA4hn8u1f/z/gPagK84pK0k3R7M6j2rLV2HfUrAverKhSLmGaTwt4+OR6f5IQohXIF1WldO5eTBzmIkPkYVBFjMKfn8WII0CNSr+TeMwLWi5aV+Qbbjy2GO5ceaYRxgv3dr17e+/LvfPaKlfTpudNVwrBAXK/j+z0CG+IGMUQTSvNl1Hmcd+T5tNa9c5hCyP5gQLXZpDS/gLchpAkTlO3AsDJbYeXMDO+3S6zc36Y3VyEtmYVSGD+zb7tXbePSs3zremGtku/y6faQx85AByHKHbVyCe8tk2jMbFhAQiUMQ0xgSJOE/m6XJDbsDUakGjAkYaVVpNdo8kGnykdnGnTPzRBVDJnPwDnETSCCpOjOc/MtbJRabO7Sfdp0d07x9naPz9bHPBU4JkvLxPUmaTxhZmYGYwTvlfF4zGg0JklSNO+z2N6nXFiil77PS892+GjxLKnxqHOIS2CiGODwrhEQr6e/9Jtft7YYOIqhWd2PkkmaUu7aFh+4nN/62R0KA8f68pj89gbRaIzLMzQfY3yPOqs0ij8mNMs4XSaLt6kVEjqlFu9OIoLA3L0nKAg8+Pat91q2VhaM6JJBu145R5rQ7ycsrWzxqTN7PPLUItg1gtHrFNlBkpu46AZxtEqWDJnkGd5P9w1EuK+Qg/MgMr1Q5ZDzBLz6s8NkdJ9tlAQRtnqiy6qcA4jyKhujNq3b2/R2lqjP3KYgrxOGY1yW4L0eFpY/VmgBsBDmBHEONjg2cyRAdCrKeT+buOyCOdcp8/a3nhwFgXx4R2tKka1JBwWyTOjtJGyud0nihNyDx+ARPEdC7jA0fEyYpUfkepL8qCP7YponF83lF55HnvyOKubjO69oT0Avbx9aqApZqgfj4/ernMitR1koeepZhr8zLUfEeswSVEnS5D4jIszUQ9Rr9/jmkdbwmMNxnnPo9Yn+dlyPCqdLSkdiVPVExIeN6VhQgswbgEIolIvmlghjmL4ldpNZEldCUEQgz8Dlx3N47GipHLig1EJlwWbcORxy4NIRsSK5x0xSzN6kYAFqYY7ADXFuA+xPiUA/bzHM65SDyWEGskwpFA92O/GgnxqtIoQBnC+56W0ZHDRl5xHnMYmLgtx/KLleC4fpe3Vvv2sBZsyIRpit9qPk6xqUf9/b0qUoqNhu2mautIWq4D2kqVLlbjh494nSMQlBFCNZmJnMr+L9O8Ew/WF1Iq81J7zz/O37uzfqY/3XV145iuOPnv81/uaNz/Gps0vzu27m1zNb+40vzL38858/84MSEqAK7dMwt2BPEML0cHqv5DmaZbLz5k7ptb9YbX9cKhTfrcT89wP7xdWtSp59+E9v3EX2MXzti1/ihaunaFUqM890/uNXL566+dulgvvFUoFqaxbOnLOIyB1CklSiLDMf5M5f29sP34vi2n8N484PQ+nHX/nmR9wLd/83/J7y5b86Sxa0axXZfLZRjL94qu0+f9+5oOLV3HJerg6H8qPRuPJaL5q9+tbaL+3ONVf0b1/653uSfjIBx/CHzz1M7Bvldmnt6c6sn/XU31gf3L8yW93Ovvb31z/JFnfF/wBkZ86YarKIdgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wNy0xOVQxOTozNjo0NyswMDowMMTcgUgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDctMTlUMTk6MzY6NDcrMDA6MDC1gTn0AAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNjI2NzIzNDA3z+e8bQAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDIxLTA3LTE5LzBhNDI3ZjQ2ODViMGEwMWU0ZjEyN2M5ODdkMmYyY2U5Lmljby5wbme9bORaAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon-96x96.8a542b7b.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,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"
+    />
+    <link rel="manifest" href="data:application/json;base64,ewogIm5hbWUiOiAiQXBwIiwKICJpY29ucyI6IFsKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMzZ4MzYucG5nIiwKICAgInNpemVzIjogIjM2eDM2IiwKICAgInR5cGUiOiAiaW1hZ2VcL3BuZyIsCiAgICJkZW5zaXR5IjogIjAuNzUiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tNDh4NDgucG5nIiwKICAgInNpemVzIjogIjQ4eDQ4IiwKICAgInR5cGUiOiAiaW1hZ2VcL3BuZyIsCiAgICJkZW5zaXR5IjogIjEuMCIKICB9LAogIHsKICAgInNyYyI6ICJcL2FuZHJvaWQtaWNvbi03Mng3Mi5wbmciLAogICAic2l6ZXMiOiAiNzJ4NzIiLAogICAidHlwZSI6ICJpbWFnZVwvcG5nIiwKICAgImRlbnNpdHkiOiAiMS41IgogIH0sCiAgewogICAic3JjIjogIlwvYW5kcm9pZC1pY29uLTk2eDk2LnBuZyIsCiAgICJzaXplcyI6ICI5Nng5NiIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICIyLjAiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMTQ0eDE0NC5wbmciLAogICAic2l6ZXMiOiAiMTQ0eDE0NCIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICIzLjAiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMTkyeDE5Mi5wbmciLAogICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICI0LjAiCiAgfQogXQp9" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./src/ressources/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Benoit Bogdan Sachart</title>
+  <script type="module" crossorigin src="./assets/main.a3dca347.js"></script>
+  <link rel="modulepreload" href="./assets/button-nabar.ddfd7732.js">
+  <link rel="stylesheet" href="./assets/button-nabar.8a59e9eb.css">
+</head>
+  <body class="dark">
+    <header>
+      <div id="logo">
+        <svg
+          width="120"
+          height="54"
+          viewBox="0 0 120 54"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Signature" clip-path="url(#clip0)">
+            <g id="Calque 2">
+              <g id="Calque 1">
+                <path
+                  class="signature-path"
+                  d="M40.71 39.66C40.71 47.5 33.24 53 20.09 53H0V0.75H19.87C31.15 0.75 37.94 5.53 37.94 12.85C37.94 20.39 31 25.62 19.57 25.92V26.14C33.24 26.14 40.71 31 40.71 39.66ZM9.26 1.49V25.69H17.1C24.87 25.69 28.68 20.69 28.68 13.15C28.68 6.2 24.42 1.49 16.73 1.49H9.26ZM31.44 39.59C31.44 31.45 26.59 26.44 17.1 26.44H9.26V52.44H16.26C26.14 52.43 31.44 47.13 31.44 39.59Z"
+                  fill="#fff"
+                />
+                <path
+                  class="signature-path"
+                  d="M81.42 39.66C81.42 47.5 74 53 60.8 53H40.71V0.75H60.58C71.86 0.75 78.65 5.53 78.65 12.85C78.65 20.39 71.71 25.62 60.28 25.92V26.14C74 26.14 81.42 31 81.42 39.66ZM50 1.49V25.69H57.84C65.61 25.69 69.42 20.69 69.42 13.15C69.42 6.2 65.16 1.49 57.42 1.49H50ZM72.18 39.59C72.18 31.45 67.33 26.44 57.84 26.44H50V52.44H57C66.85 52.43 72.15 47.13 72.15 39.59H72.18Z"
+                  fill="#fff"
+                />
+                <path
+                  class="signature-path"
+                  d="M81.4199 37.94H82.1699C82.1699 46.94 89.5599 52.94 100.77 52.94C108.38 52.94 113.61 49.43 113.61 43.38C113.61 28.44 81.8699 35.16 81.8699 15.52C81.8699 6.27 88.8899 0 99.4199 0C109.58 0 116.42 5.75 116.42 14.34H115.67C115.7 6.27 109.28 0.82 99.9399 0.82C92.3299 0.82 87.6199 4.48 87.6199 10.16C87.6199 24.65 119.36 18.52 119.36 38.24C119.36 47.65 111.89 53.78 101.14 53.78C89.2599 53.78 81.4199 47.43 81.4199 37.94Z"
+                  fill="#fff"
+                />
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="119.36" height="53.78" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div id="navbar">
+        <a href="#about-me-section" id="nav-about-me">About Me</a>
+        <a href="#projects">My projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div id="button-navbar">
+        <!-- Hamburger SVG -->
+        <svg
+          width="28"
+          height="15"
+          viewBox="0 0 27 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="hamburger-svg"
+        >
+          <rect
+            width="27"
+            height="3"
+            rx="1.5"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+          <rect
+            y="9"
+            width="27"
+            height="3"
+            rx="1.5"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+        </svg>
+
+        <!-- Cross SVG -->
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 23 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="cross-svg"
+        >
+          <rect
+            x="1"
+            y="20"
+            width="27"
+            height="3"
+            rx="1.5"
+            transform="rotate(-45 1 20)"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+          <rect
+            x="2.99951"
+            y="1"
+            width="27"
+            height="3"
+            rx="1.5"
+            transform="rotate(45 2.99951 1)"
+            fill="#fff"
+            class="rect-svg-navbar-button"
+          />
+        </svg>
+      </div>
+
+      <div id="right-menu-item">
+        <div id="toggle-wrap">
+          <input id="toggle-dark-mode" class="toggle" type="checkbox" />
+        </div>
+
+        <div id="languages">
+          <span class="language">
+            <a href="./" id="en" class="checked-language">EN</a>
+          </span>
+          <span id="language-hr">|</span>
+          <span class="language">
+            <a href="./fr.html" id="fr">FR</a>
+          </span>
+        </div>
+        <div id="social-links">
+          <div>
+            <a
+              id="linkedin-link"
+              class="social-link"
+              href="https://www.linkedin.com/in/bog-ii/"
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="linkedin-icon"
+                  class="social-link-path"
+                  d="M16 0C7.16479 0 0 7.16479 0 16C0 24.8352 7.16479 32 16 32C24.8352 32 32 24.8352 32 16C32 7.16479 24.8352 0 16 0ZM11.3506 24.1875H7.45386V12.4641H11.3506V24.1875ZM9.40234 10.8633H9.37695C8.06934 10.8633 7.22363 9.96313 7.22363 8.83813C7.22363 7.68774 8.09521 6.8125 9.42822 6.8125C10.7612 6.8125 11.5815 7.68774 11.6069 8.83813C11.6069 9.96313 10.7612 10.8633 9.40234 10.8633ZM25.4014 24.1875H21.5051V17.9158C21.5051 16.3396 20.9409 15.2646 19.531 15.2646C18.4546 15.2646 17.8135 15.9897 17.5317 16.6897C17.4287 16.9402 17.4036 17.2903 17.4036 17.6406V24.1875H13.5071C13.5071 24.1875 13.5581 13.564 13.5071 12.4641H17.4036V14.124C17.9214 13.3252 18.8479 12.189 20.9153 12.189C23.479 12.189 25.4014 13.8645 25.4014 17.4653V24.1875Z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a
+              id="github-link"
+              href="https://github.com/Bog-II"
+              class="social-link"
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="github-icon"
+                  class="social-link-path"
+                  d="M16.002 0C24.836 0 32 7.192 32 16.064C32 23.16 27.416 29.18 21.056 31.306C20.256 31.454 19.964 30.958 19.964 30.532C19.964 30.15 19.978 29.14 19.986 27.8C24.436 28.77 25.376 25.646 25.376 25.646C26.102 23.79 27.152 23.296 27.152 23.296C28.606 22.3 27.044 22.32 27.044 22.32C25.438 22.434 24.594 23.976 24.594 23.976C23.166 26.43 20.848 25.722 19.936 25.31C19.792 24.272 19.378 23.564 18.92 23.162C22.472 22.756 26.208 21.378 26.208 15.224C26.208 13.47 25.584 12.036 24.56 10.912C24.726 10.506 25.274 8.872 24.404 6.662C24.404 6.662 23.06 6.23 20.004 8.308C18.728 7.952 17.36 7.774 15.998 7.768C14.64 7.776 13.27 7.952 11.992 8.31C8.938 6.232 7.596 6.664 7.596 6.664C6.724 8.876 7.272 10.508 7.436 10.914C6.41 12.038 5.792 13.472 5.792 15.226C5.792 21.396 9.532 22.754 13.096 23.152C12.522 23.648 12.01 24.628 12.01 26.126C12.01 28.274 12.03 30.006 12.03 30.532C12.03 30.962 11.742 31.462 10.93 31.304C4.58 29.176 0 23.158 0 16.064C0 7.192 7.164 0 16.002 0Z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <h1>
+          Hey! <br />
+          <span>I'm Benoit Bogdan Sachart,</span><br />
+          <span>a problem solver</span>
+        </h1>
+      </div>
+
+      <section id="about-me-section">
+        <div class="section-container">
+          <h2 id="about-me">About me</h2>
+          <div class="p-wrap">
+            <p>I am currently pursuing a computer science degree in France.</p>
+            <p>
+              My different interests are:<br>
+              Machine Learning, Philosophy,
+              Mathematics, Economy, Finance, Design, Chess and obviously
+              Computer Science.
+            </p>
+          </div>
+          <button id="resume-button">Resume (109 kb)</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="projects">My projects</h2>
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./assets/digit-recognition-1175x880.b7e4eb1a.jpg"
+              alt="digit recognition"
+              class="project-image"
+            />
+            <h3 class="project-title">Characters Extraction</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Tool allowing characters recognition and extraction from images
+                in 66 languages through an UI in the browser</span
+              >
+              <span class="github-project">
+                <a
+                  href="https://github.com/Bog-II/text-recognition-tesseract.js"
+                  target="_blank"
+                  >Github ↗</a
+                >
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Python</span></li>
+              <li><span>Pytesseract</span></li>
+              <li><span>NodeJS</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./assets/ai-flappy-bird-1175x880.e19fa508.jpg"
+              alt="content webscraping"
+              class="project-image"
+            />
+            <h3 class="project-title">Flappy Bird & AI</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Flappy bird game and neural network trained concurrently per
+                series of 100 birds using the ReLU activation function</span
+              >
+              <span class="github-project">
+                <a
+                  href="https://github.com/Bog-II/flappy-bird-ai"
+                  target="_blank"
+                  >Github ↗</a
+                >
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Python</span></li>
+              <li><span>Neat-Python</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./assets/webscraping-1175x880.f4e99f1a.jpg"
+              alt="content webscraping"
+              class="project-image"
+            />
+            <h3 class="project-title">Articles Scraping & Translation</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Webscraping of articles (e.g. medium) and translation of them
+                in all languages available by the pyGoogleTranslate api</span
+              >
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Python</span></li>
+              <li><span>BeautifulSoup</span></li>
+              <li><span>pyGoogleTrans</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./assets/snake-1175x880.16729286.jpg"
+              alt="snake game"
+              class="project-image"
+            />
+            <h3 class="project-title">Snake Game</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Snake game integrating multiple features such as boosts,
+                penalties, tracking scores, snake skins and the modification of
+                the map size</span
+              >
+              <span class="github-project">
+                <a
+                  href="https://github.com/Bog-II/Snake-Game-Java"
+                  target="_blank"
+                  >Github ↗</a
+                >
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Java</span></li>
+              <li><span>JavaFX</span></li>
+              <li><span>CSS</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <figure class="project-figure">
+            <img
+              src="./assets/memory-1175x880.7cca1f82.jpg"
+              alt="memory game"
+              class="project-image"
+            />
+            <h3 class="project-title">Memory Game</h3>
+            <figcaption class="project-image-figcaption">
+              <span
+                >Memory game composed of 263 international flags from different
+                countries and cities incorporating 3 difficulties and score
+                tracking</span
+              >
+              <span class="github-project">
+                <a
+                  href="https://github.com/Bog-II/memory-game-university-project"
+                  target="_blank"
+                  >Github ↗</a
+                >
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="container-project-technologies">
+            <ul class="project-technologies">
+              <li><span>Java</span></li>
+              <li><span>Java Swing</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-container">
+          <h2 id="contact">Contact</h2>
+          <div class="p-wrap">
+            <p>Presently, I am looking for a Software Engineer job.</p>
+            <p>
+              However, if you have another type of request, don't hesitate to
+              contact me using the links below ↓.
+            </p>
+          </div>
+
+          <div id="contact-links">
+            <span>
+              <a href="mailto:sachart.bogdan@gmail.com" target="_blank"
+                >Email ↗</a
+              >
+            </span>
+            <span
+              ><a href="https://github.com/Bog-II" target="_blank"
+                >Github ↗</a
+              ></span
+            >
+            <span
+              ><a href="https://www.linkedin.com/in/bog-ii/" target="_blank"
+                >LinkedIn ↗</a
+              >
+            </span>
+          </div>
+          <span id="FF-contact-me">Feel free to get in touch with me</span>
+        </div>
+        <img id="plane" src="./assets/plane.42903827.png" alt="plane" />
+      </section>
+      <img id="loupe" src="./assets/loupe.13034ed3.png" alt="loupe" />
+    </main>
+
+    <footer>
+      <!-- Dynamically updated -->
+      <div id="footer"></div>
+    </footer>
+
+    <script defer>
+      const css =
+        'color: var(--hoover-primary);text-decoration: none; pointer-events: none; display: inline-block;transform: skew(0, 8deg)';
+
+      // en handle
+      const en = document.getElementById('en');
+      en.style.cssText += css;
+      window.variables = {
+        messageConsole: 'Nice Try!',
+      };
+
+      // fr handle
+      // const fr = document.getElementById('fr');
+      // fr.style.cssText += css;
+      // window.variables = {
+      //   messageConsole: 'Bien essayé!',
+      // };
+    </script>
+
+    
+  </body>
+</html>
