@@ -1,495 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./src/ressources/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./src/ressources/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./src/ressources/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./src/ressources/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./src/ressources/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./src/ressources/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./src/ressources/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./src/ressources/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./src/ressources/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./src/ressources/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/ressources/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./src/ressources/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./src/ressources/favicon/favicon-16x16.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./src/ressources/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/style.scss" />
-    <title>Benoit Bogdan Sachart</title>
-  </head>
-  <body class="dark">
-    <header>
-      <div id="logo">
-        <svg
-          width="120"
-          height="54"
-          viewBox="0 0 120 54"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="Signature" clip-path="url(#clip0)">
-            <g id="Calque 2">
-              <g id="Calque 1">
-                <path
-                  class="signature-path"
-                  d="M40.71 39.66C40.71 47.5 33.24 53 20.09 53H0V0.75H19.87C31.15 0.75 37.94 5.53 37.94 12.85C37.94 20.39 31 25.62 19.57 25.92V26.14C33.24 26.14 40.71 31 40.71 39.66ZM9.26 1.49V25.69H17.1C24.87 25.69 28.68 20.69 28.68 13.15C28.68 6.2 24.42 1.49 16.73 1.49H9.26ZM31.44 39.59C31.44 31.45 26.59 26.44 17.1 26.44H9.26V52.44H16.26C26.14 52.43 31.44 47.13 31.44 39.59Z"
-                  fill="#fff"
-                />
-                <path
-                  class="signature-path"
-                  d="M81.42 39.66C81.42 47.5 74 53 60.8 53H40.71V0.75H60.58C71.86 0.75 78.65 5.53 78.65 12.85C78.65 20.39 71.71 25.62 60.28 25.92V26.14C74 26.14 81.42 31 81.42 39.66ZM50 1.49V25.69H57.84C65.61 25.69 69.42 20.69 69.42 13.15C69.42 6.2 65.16 1.49 57.42 1.49H50ZM72.18 39.59C72.18 31.45 67.33 26.44 57.84 26.44H50V52.44H57C66.85 52.43 72.15 47.13 72.15 39.59H72.18Z"
-                  fill="#fff"
-                />
-                <path
-                  class="signature-path"
-                  d="M81.4199 37.94H82.1699C82.1699 46.94 89.5599 52.94 100.77 52.94C108.38 52.94 113.61 49.43 113.61 43.38C113.61 28.44 81.8699 35.16 81.8699 15.52C81.8699 6.27 88.8899 0 99.4199 0C109.58 0 116.42 5.75 116.42 14.34H115.67C115.7 6.27 109.28 0.82 99.9399 0.82C92.3299 0.82 87.6199 4.48 87.6199 10.16C87.6199 24.65 119.36 18.52 119.36 38.24C119.36 47.65 111.89 53.78 101.14 53.78C89.2599 53.78 81.4199 47.43 81.4199 37.94Z"
-                  fill="#fff"
-                />
-              </g>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./src/ressources/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./src/ressources/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./src/ressources/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./src/ressources/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./src/ressources/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./src/ressources/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./src/ressources/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./src/ressources/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/ressources/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./src/ressources/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/ressources/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./src/ressources/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/ressources/favicon/favicon-16x16.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./src/ressources/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style/style.scss" />
+  <title>Benoit Bogdan Sachart</title>
+</head>
+
+<body class="dark">
+  <header>
+    <div id="logo">
+      <svg width="120" height="54" viewBox="0 0 120 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Signature" clip-path="url(#clip0)">
+          <g id="Calque 2">
+            <g id="Calque 1">
+              <path class="signature-path"
+                d="M40.71 39.66C40.71 47.5 33.24 53 20.09 53H0V0.75H19.87C31.15 0.75 37.94 5.53 37.94 12.85C37.94 20.39 31 25.62 19.57 25.92V26.14C33.24 26.14 40.71 31 40.71 39.66ZM9.26 1.49V25.69H17.1C24.87 25.69 28.68 20.69 28.68 13.15C28.68 6.2 24.42 1.49 16.73 1.49H9.26ZM31.44 39.59C31.44 31.45 26.59 26.44 17.1 26.44H9.26V52.44H16.26C26.14 52.43 31.44 47.13 31.44 39.59Z"
+                fill="#fff" />
+              <path class="signature-path"
+                d="M81.42 39.66C81.42 47.5 74 53 60.8 53H40.71V0.75H60.58C71.86 0.75 78.65 5.53 78.65 12.85C78.65 20.39 71.71 25.62 60.28 25.92V26.14C74 26.14 81.42 31 81.42 39.66ZM50 1.49V25.69H57.84C65.61 25.69 69.42 20.69 69.42 13.15C69.42 6.2 65.16 1.49 57.42 1.49H50ZM72.18 39.59C72.18 31.45 67.33 26.44 57.84 26.44H50V52.44H57C66.85 52.43 72.15 47.13 72.15 39.59H72.18Z"
+                fill="#fff" />
+              <path class="signature-path"
+                d="M81.4199 37.94H82.1699C82.1699 46.94 89.5599 52.94 100.77 52.94C108.38 52.94 113.61 49.43 113.61 43.38C113.61 28.44 81.8699 35.16 81.8699 15.52C81.8699 6.27 88.8899 0 99.4199 0C109.58 0 116.42 5.75 116.42 14.34H115.67C115.7 6.27 109.28 0.82 99.9399 0.82C92.3299 0.82 87.6199 4.48 87.6199 10.16C87.6199 24.65 119.36 18.52 119.36 38.24C119.36 47.65 111.89 53.78 101.14 53.78C89.2599 53.78 81.4199 47.43 81.4199 37.94Z"
+                fill="#fff" />
             </g>
           </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="119.36" height="53.78" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="119.36" height="53.78" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div id="navbar">
+      <a href="#about-me-section" id="nav-about-me">About Me</a>
+      <a href="#projects">My projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div id="button-navbar">
+      <!-- Hamburger SVG -->
+      <svg width="28" height="15" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger-svg">
+        <rect width="27" height="3" rx="1.5" fill="#fff" class="rect-svg-navbar-button" />
+        <rect y="9" width="27" height="3" rx="1.5" fill="#fff" class="rect-svg-navbar-button" />
+      </svg>
+
+      <!-- Cross SVG -->
+      <svg width="28" height="28" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross-svg">
+        <rect x="1" y="20" width="27" height="3" rx="1.5" transform="rotate(-45 1 20)" fill="#fff"
+          class="rect-svg-navbar-button" />
+        <rect x="2.99951" y="1" width="27" height="3" rx="1.5" transform="rotate(45 2.99951 1)" fill="#fff"
+          class="rect-svg-navbar-button" />
+      </svg>
+    </div>
+
+    <div id="right-menu-item">
+      <div id="toggle-wrap">
+        <input id="toggle-dark-mode" class="toggle" type="checkbox" />
       </div>
 
-      <div id="navbar">
-        <a href="#about-me-section" id="nav-about-me">About Me</a>
-        <a href="#projects">My projects</a>
-        <a href="#contact">Contact</a>
+      <div id="languages">
+        <span class="language">
+          <a href="./" id="en" class="checked-language">EN</a>
+        </span>
+        <span id="language-hr">|</span>
+        <span class="language">
+          <a href="./fr.html" id="fr">FR</a>
+        </span>
       </div>
-
-      <div id="button-navbar">
-        <!-- Hamburger SVG -->
-        <svg
-          width="28"
-          height="15"
-          viewBox="0 0 27 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          id="hamburger-svg"
-        >
-          <rect
-            width="27"
-            height="3"
-            rx="1.5"
-            fill="#fff"
-            class="rect-svg-navbar-button"
-          />
-          <rect
-            y="9"
-            width="27"
-            height="3"
-            rx="1.5"
-            fill="#fff"
-            class="rect-svg-navbar-button"
-          />
-        </svg>
-
-        <!-- Cross SVG -->
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 23 23"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          id="cross-svg"
-        >
-          <rect
-            x="1"
-            y="20"
-            width="27"
-            height="3"
-            rx="1.5"
-            transform="rotate(-45 1 20)"
-            fill="#fff"
-            class="rect-svg-navbar-button"
-          />
-          <rect
-            x="2.99951"
-            y="1"
-            width="27"
-            height="3"
-            rx="1.5"
-            transform="rotate(45 2.99951 1)"
-            fill="#fff"
-            class="rect-svg-navbar-button"
-          />
-        </svg>
-      </div>
-
-      <div id="right-menu-item">
-        <div id="toggle-wrap">
-          <input id="toggle-dark-mode" class="toggle" type="checkbox" />
-        </div>
-
-        <div id="languages">
-          <span class="language">
-            <a href="./" id="en" class="checked-language">EN</a>
-          </span>
-          <span id="language-hr">|</span>
-          <span class="language">
-            <a href="./fr.html" id="fr">FR</a>
-          </span>
-        </div>
-        <div id="social-links">
-          <div>
-            <a
-              id="linkedin-link"
-              class="social-link"
-              href="https://www.linkedin.com/in/bog-ii/"
-              target="_blank"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="linkedin-icon"
-                  class="social-link-path"
-                  d="M16 0C7.16479 0 0 7.16479 0 16C0 24.8352 7.16479 32 16 32C24.8352 32 32 24.8352 32 16C32 7.16479 24.8352 0 16 0ZM11.3506 24.1875H7.45386V12.4641H11.3506V24.1875ZM9.40234 10.8633H9.37695C8.06934 10.8633 7.22363 9.96313 7.22363 8.83813C7.22363 7.68774 8.09521 6.8125 9.42822 6.8125C10.7612 6.8125 11.5815 7.68774 11.6069 8.83813C11.6069 9.96313 10.7612 10.8633 9.40234 10.8633ZM25.4014 24.1875H21.5051V17.9158C21.5051 16.3396 20.9409 15.2646 19.531 15.2646C18.4546 15.2646 17.8135 15.9897 17.5317 16.6897C17.4287 16.9402 17.4036 17.2903 17.4036 17.6406V24.1875H13.5071C13.5071 24.1875 13.5581 13.564 13.5071 12.4641H17.4036V14.124C17.9214 13.3252 18.8479 12.189 20.9153 12.189C23.479 12.189 25.4014 13.8645 25.4014 17.4653V24.1875Z"
-                  fill="#000"
-                />
-              </svg>
-            </a>
-          </div>
-          <div>
-            <a
-              id="github-link"
-              href="https://github.com/Bog-II"
-              class="social-link"
-              target="_blank"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="github-icon"
-                  class="social-link-path"
-                  d="M16.002 0C24.836 0 32 7.192 32 16.064C32 23.16 27.416 29.18 21.056 31.306C20.256 31.454 19.964 30.958 19.964 30.532C19.964 30.15 19.978 29.14 19.986 27.8C24.436 28.77 25.376 25.646 25.376 25.646C26.102 23.79 27.152 23.296 27.152 23.296C28.606 22.3 27.044 22.32 27.044 22.32C25.438 22.434 24.594 23.976 24.594 23.976C23.166 26.43 20.848 25.722 19.936 25.31C19.792 24.272 19.378 23.564 18.92 23.162C22.472 22.756 26.208 21.378 26.208 15.224C26.208 13.47 25.584 12.036 24.56 10.912C24.726 10.506 25.274 8.872 24.404 6.662C24.404 6.662 23.06 6.23 20.004 8.308C18.728 7.952 17.36 7.774 15.998 7.768C14.64 7.776 13.27 7.952 11.992 8.31C8.938 6.232 7.596 6.664 7.596 6.664C6.724 8.876 7.272 10.508 7.436 10.914C6.41 12.038 5.792 13.472 5.792 15.226C5.792 21.396 9.532 22.754 13.096 23.152C12.522 23.648 12.01 24.628 12.01 26.126C12.01 28.274 12.03 30.006 12.03 30.532C12.03 30.962 11.742 31.462 10.93 31.304C4.58 29.176 0 23.158 0 16.064C0 7.192 7.164 0 16.002 0Z"
-                  fill="#000"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div>
-        <h1>
-          Hey! <br />
-          <span>I'm Benoit Bogdan Sachart,</span><br />
-          <span>a problem solver</span>
-        </h1>
-      </div>
-
-      <section id="about-me-section">
-        <div class="section-container">
-          <h2 id="about-me">About me</h2>
-          <div class="p-wrap">
-            <p>I am currently pursuing a Computer Science degree in France.</p>
-            <p>
-              My different interests are:<br />
-              Machine Learning, Philosophy, Mathematics, Economy, Finance,
-              Design, Chess and obviously Computer Science.
-            </p>
-          </div>
-
-          <a
-            id="resume-button"
-            href="./src/ressources/resumes/resume_bbs_en.pdf"
-            download
-            ><span>Résumé (2.2 Mo)</span>
+      <div id="social-links">
+        <div>
+          <a id="linkedin-link" class="social-link" href="https://www.linkedin.com/in/bog-ii/" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="linkedin-icon" class="social-link-path"
+                d="M16 0C7.16479 0 0 7.16479 0 16C0 24.8352 7.16479 32 16 32C24.8352 32 32 24.8352 32 16C32 7.16479 24.8352 0 16 0ZM11.3506 24.1875H7.45386V12.4641H11.3506V24.1875ZM9.40234 10.8633H9.37695C8.06934 10.8633 7.22363 9.96313 7.22363 8.83813C7.22363 7.68774 8.09521 6.8125 9.42822 6.8125C10.7612 6.8125 11.5815 7.68774 11.6069 8.83813C11.6069 9.96313 10.7612 10.8633 9.40234 10.8633ZM25.4014 24.1875H21.5051V17.9158C21.5051 16.3396 20.9409 15.2646 19.531 15.2646C18.4546 15.2646 17.8135 15.9897 17.5317 16.6897C17.4287 16.9402 17.4036 17.2903 17.4036 17.6406V24.1875H13.5071C13.5071 24.1875 13.5581 13.564 13.5071 12.4641H17.4036V14.124C17.9214 13.3252 18.8479 12.189 20.9153 12.189C23.479 12.189 25.4014 13.8645 25.4014 17.4653V24.1875Z"
+                fill="#000" />
+            </svg>
           </a>
         </div>
-      </section>
+        <div>
+          <a id="github-link" href="https://github.com/Bog-II" class="social-link" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="github-icon" class="social-link-path"
+                d="M16.002 0C24.836 0 32 7.192 32 16.064C32 23.16 27.416 29.18 21.056 31.306C20.256 31.454 19.964 30.958 19.964 30.532C19.964 30.15 19.978 29.14 19.986 27.8C24.436 28.77 25.376 25.646 25.376 25.646C26.102 23.79 27.152 23.296 27.152 23.296C28.606 22.3 27.044 22.32 27.044 22.32C25.438 22.434 24.594 23.976 24.594 23.976C23.166 26.43 20.848 25.722 19.936 25.31C19.792 24.272 19.378 23.564 18.92 23.162C22.472 22.756 26.208 21.378 26.208 15.224C26.208 13.47 25.584 12.036 24.56 10.912C24.726 10.506 25.274 8.872 24.404 6.662C24.404 6.662 23.06 6.23 20.004 8.308C18.728 7.952 17.36 7.774 15.998 7.768C14.64 7.776 13.27 7.952 11.992 8.31C8.938 6.232 7.596 6.664 7.596 6.664C6.724 8.876 7.272 10.508 7.436 10.914C6.41 12.038 5.792 13.472 5.792 15.226C5.792 21.396 9.532 22.754 13.096 23.152C12.522 23.648 12.01 24.628 12.01 26.126C12.01 28.274 12.03 30.006 12.03 30.532C12.03 30.962 11.742 31.462 10.93 31.304C4.58 29.176 0 23.158 0 16.064C0 7.192 7.164 0 16.002 0Z"
+                fill="#000" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <section>
-        <h2 id="projects">My projects</h2>
-        <div class="project">
-          <figure class="project-figure">
-            <img
-              src="./src/ressources/project-illustration/digit-recognition-1175x880.jpg"
-              alt="digit recognition"
-              class="project-image"
-            />
-            <h3 class="project-title">Characters Extraction</h3>
-            <figcaption class="project-image-figcaption">
-              <span
-                >Tool allowing characters recognition and extraction from images
-                in 66 languages through an UI in the browser</span
-              >
-              <span class="github-project">
-                <a
-                  href="https://github.com/Bog-II/text-recognition-tesseract.js"
-                  target="_blank"
-                  >Github ↗</a
-                >
-              </span>
-            </figcaption>
-          </figure>
+  <main>
+    <div>
+      <h1>
+        Hey! <br />
+        <span>I'm Benoit Bogdan Sachart,</span><br />
+        <span>a problem solver</span>
+      </h1>
+    </div>
 
-          <div class="container-project-technologies">
-            <ul class="project-technologies">
-              <li><span>TypeScript</span></li>
-              <li><span>Sass</span></li>
-              <li><span>Node.js</span></li>
-              <li><span>Figma</span></li>
-            </ul>
-          </div>
+    <section id="about-me-section">
+      <div class="section-container">
+        <h2 id="about-me">About me</h2>
+        <div class="p-wrap">
+          <p>I am currently pursuing a Computer Science degree in France.</p>
+          <p>
+            My different interests are:<br />
+            Machine Learning, Philosophy, Mathematics, Economy, Finance,
+            Design, Chess and obviously Computer Science.
+          </p>
         </div>
 
-        <div class="project">
-          <figure class="project-figure">
-            <img
-              src="./src/ressources/project-illustration/ai-flappy-bird-1175x880.jpg"
-              alt="content webscraping"
-              class="project-image"
-            />
-            <h3 class="project-title">Flappy Bird & AI</h3>
-            <figcaption class="project-image-figcaption">
-              <span
-                >Flappy bird game and neural network trained concurrently per
-                series of 100 birds using the ReLU activation function</span
-              >
-              <span class="github-project">
-                <a
-                  href="https://github.com/Bog-II/flappy-bird-ai"
-                  target="_blank"
-                  >Github ↗</a
-                >
-              </span>
-            </figcaption>
-          </figure>
+        <a id="resume-button" target="_blank"
+          href="https://drive.google.com/file/d/1i7mAeqkJW65KFKnfIamyUWDtBrnspnuY/view?usp=sharing"
+          download><span>Résumé (2.2
+            Mo)</span>
+        </a>
+      </div>
+    </section>
 
-          <div class="container-project-technologies">
-            <ul class="project-technologies">
-              <li><span>Python</span></li>
-              <li><span>Neat-Python</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project">
-          <figure class="project-figure">
-            <img
-              src="./src/ressources/project-illustration/webscraping-1175x880.jpg"
-              alt="content webscraping"
-              class="project-image"
-            />
-            <h3 class="project-title">Articles Scraping & Translation</h3>
-            <figcaption class="project-image-figcaption">
-              <span
-                >Webscraping of articles (e.g. medium) and translation of them
-                in all languages available by the pyGoogleTranslate api</span
-              >
-            </figcaption>
-          </figure>
-
-          <div class="container-project-technologies">
-            <ul class="project-technologies">
-              <li><span>Python</span></li>
-              <li><span>BeautifulSoup</span></li>
-              <li><span>pyGoogleTrans</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project">
-          <figure class="project-figure">
-            <img
-              src="./src/ressources/project-illustration/snake-1175x880.jpg"
-              alt="snake game"
-              class="project-image"
-            />
-            <h3 class="project-title">Snake Game</h3>
-            <figcaption class="project-image-figcaption">
-              <span
-                >Snake game integrating multiple features such as boosts,
-                penalties, tracking scores, snake skins and the modification of
-                the map size</span
-              >
-              <span class="github-project">
-                <a
-                  href="https://github.com/Bog-II/Snake-Game-Java"
-                  target="_blank"
-                  >Github ↗</a
-                >
-              </span>
-            </figcaption>
-          </figure>
-
-          <div class="container-project-technologies">
-            <ul class="project-technologies">
-              <li><span>Java</span></li>
-              <li><span>JavaFX</span></li>
-              <li><span>CSS</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project">
-          <figure class="project-figure">
-            <img
-              src="./src/ressources/project-illustration/memory-1175x880.jpg"
-              alt="memory game"
-              class="project-image"
-            />
-            <h3 class="project-title">Memory Game</h3>
-            <figcaption class="project-image-figcaption">
-              <span
-                >Memory game composed of 263 international flags from different
-                countries and cities incorporating 3 difficulties and score
-                tracking</span
-              >
-              <span class="github-project">
-                <a
-                  href="https://github.com/Bog-II/memory-game-university-project"
-                  target="_blank"
-                  >Github ↗</a
-                >
-              </span>
-            </figcaption>
-          </figure>
-
-          <div class="container-project-technologies">
-            <ul class="project-technologies">
-              <li><span>Java</span></li>
-              <li><span>Java Swing</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="section-container">
-          <h2 id="contact">Contact</h2>
-          <div class="p-wrap">
-            <p>Presently, I am looking for a Software Engineer job.</p>
-            <p>
-              However, if you have another type of request, don't hesitate to
-              contact me using the links below ↓.
-            </p>
-          </div>
-
-          <div id="contact-links">
-            <span>
-              <a href="mailto:sachart.bogdan@gmail.com" target="_blank"
-                >Email ↗</a
-              >
+    <section>
+      <h2 id="projects">My projects</h2>
+      <div class="project">
+        <figure class="project-figure">
+          <img src="./src/ressources/project-illustration/digit-recognition-1175x880.jpg" alt="digit recognition"
+            class="project-image" />
+          <h3 class="project-title">Characters Extraction</h3>
+          <figcaption class="project-image-figcaption">
+            <span>Tool allowing characters recognition and extraction from images
+              in 66 languages through an UI in the browser</span>
+            <span class="github-project">
+              <a href="https://github.com/Bog-II/text-recognition-tesseract.js" target="_blank">Github ↗</a>
             </span>
-            <span
-              ><a href="https://github.com/Bog-II" target="_blank"
-                >Github ↗</a
-              ></span
-            >
-            <span
-              ><a href="https://www.linkedin.com/in/bog-ii/" target="_blank"
-                >LinkedIn ↗</a
-              >
-            </span>
-          </div>
-          <span id="FF-contact-me">Feel free to get in touch with me</span>
+          </figcaption>
+        </figure>
+
+        <div class="container-project-technologies">
+          <ul class="project-technologies">
+            <li><span>TypeScript</span></li>
+            <li><span>Sass</span></li>
+            <li><span>Node.js</span></li>
+            <li><span>Figma</span></li>
+          </ul>
         </div>
-        <img id="plane" src="./src/ressources/3d/plane.png" alt="plane" />
-      </section>
-      <img id="loupe" src="./src/ressources/3d/loupe.png" alt="loupe" />
-    </main>
+      </div>
 
-    <footer>
-      <!-- Dynamically updated -->
-      <div id="footer"></div>
-    </footer>
+      <div class="project">
+        <figure class="project-figure">
+          <img src="./src/ressources/project-illustration/ai-flappy-bird-1175x880.jpg" alt="content webscraping"
+            class="project-image" />
+          <h3 class="project-title">Flappy Bird & AI</h3>
+          <figcaption class="project-image-figcaption">
+            <span>Flappy bird game and neural network trained concurrently per
+              series of 100 birds using the ReLU activation function</span>
+            <span class="github-project">
+              <a href="https://github.com/Bog-II/flappy-bird-ai" target="_blank">Github ↗</a>
+            </span>
+          </figcaption>
+        </figure>
 
-    <script defer>
-      const css =
-        'color: var(--hoover-primary);text-decoration: none; pointer-events: none; display: inline-block;transform: skew(0, 8deg)';
+        <div class="container-project-technologies">
+          <ul class="project-technologies">
+            <li><span>Python</span></li>
+            <li><span>Neat-Python</span></li>
+          </ul>
+        </div>
+      </div>
 
-      // en handle
-      const en = document.getElementById('en');
-      en.style.cssText += css;
-      window.variables = {
-        messageConsole: 'Nice Try!',
-      };
+      <div class="project">
+        <figure class="project-figure">
+          <img src="./src/ressources/project-illustration/webscraping-1175x880.jpg" alt="content webscraping"
+            class="project-image" />
+          <h3 class="project-title">Articles Scraping & Translation</h3>
+          <figcaption class="project-image-figcaption">
+            <span>Webscraping of articles (e.g. medium) and translation of them
+              in all languages available by the pyGoogleTranslate api</span>
+          </figcaption>
+        </figure>
+
+        <div class="container-project-technologies">
+          <ul class="project-technologies">
+            <li><span>Python</span></li>
+            <li><span>BeautifulSoup</span></li>
+            <li><span>pyGoogleTrans</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <figure class="project-figure">
+          <img src="./src/ressources/project-illustration/snake-1175x880.jpg" alt="snake game" class="project-image" />
+          <h3 class="project-title">Snake Game</h3>
+          <figcaption class="project-image-figcaption">
+            <span>Snake game integrating multiple features such as boosts,
+              penalties, tracking scores, snake skins and the modification of
+              the map size</span>
+            <span class="github-project">
+              <a href="https://github.com/Bog-II/Snake-Game-Java" target="_blank">Github ↗</a>
+            </span>
+          </figcaption>
+        </figure>
+
+        <div class="container-project-technologies">
+          <ul class="project-technologies">
+            <li><span>Java</span></li>
+            <li><span>JavaFX</span></li>
+            <li><span>CSS</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <figure class="project-figure">
+          <img src="./src/ressources/project-illustration/memory-1175x880.jpg" alt="memory game"
+            class="project-image" />
+          <h3 class="project-title">Memory Game</h3>
+          <figcaption class="project-image-figcaption">
+            <span>Memory game composed of 263 international flags from different
+              countries and cities incorporating 3 difficulties and score
+              tracking</span>
+            <span class="github-project">
+              <a href="https://github.com/Bog-II/memory-game-university-project" target="_blank">Github ↗</a>
+            </span>
+          </figcaption>
+        </figure>
+
+        <div class="container-project-technologies">
+          <ul class="project-technologies">
+            <li><span>Java</span></li>
+            <li><span>Java Swing</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-container">
+        <h2 id="contact">Contact</h2>
+        <div class="p-wrap">
+          <p>Presently, I am looking for a Software Engineer job.</p>
+          <p>
+            However, if you have another type of request, don't hesitate to
+            contact me using the links below ↓.
+          </p>
+        </div>
+
+        <div id="contact-links">
+          <span>
+            <a href="mailto:sachart.bogdan@gmail.com" target="_blank">Email ↗</a>
+          </span>
+          <span><a href="https://github.com/Bog-II" target="_blank">Github ↗</a></span>
+          <span><a href="https://www.linkedin.com/in/bog-ii/" target="_blank">LinkedIn ↗</a>
+          </span>
+        </div>
+        <span id="FF-contact-me">Feel free to get in touch with me</span>
+      </div>
+      <img id="plane" src="./src/ressources/3d/plane.png" alt="plane" />
+    </section>
+    <img id="loupe" src="./src/ressources/3d/loupe.png" alt="loupe" />
+  </main>
+
+  <footer>
+    <!-- Dynamically updated -->
+    <div id="footer"></div>
+  </footer>
+
+  <script defer>
+    const css =
+      'color: var(--hoover-primary);text-decoration: none; pointer-events: none; display: inline-block;transform: skew(0, 8deg)';
+
+    // en handle
+    const en = document.getElementById('en');
+    en.style.cssText += css;
+    window.variables = {
+      messageConsole: 'Nice Try!',
+    };
 
       // fr handle
       // const fr = document.getElementById('fr');
@@ -497,8 +305,9 @@
       // window.variables = {
       //   messageConsole: 'Bien essayé!',
       // };
-    </script>
+  </script>
 
-    <script type="module" src="./src/ts/main.ts" defer></script>
-  </body>
+  <script type="module" src="./src/ts/main.ts" defer></script>
+</body>
+
 </html>
